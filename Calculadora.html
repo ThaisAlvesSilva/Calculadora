@@ -5,37 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
-    <style>
-        body{
-            background-color: blanchedalmond; 
-            font: normal 20pt arial;
-            margin: 0px;
-            width: 100vw;
-            height: 100vh;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center; 
-        }
-        input{
-            margin-top: 10px;
-            width: 213px;
-            height: 20px;
-            margin-bottom: 10px;
-        }
-        button{
-            width:50px;
-            height:50px;
-            margin-top: 10px;
-        }
-        div#divMenor{
-            margin-left: 35px;
-        }
-        h1{
-            margin-top: -20px;
-        }
-
-    </style>
+    <link rel="stylesheet" type="text/css" href="Calculadora.css" media="screen" />
+    <script type="text/javascript" src="Calculadora.js"></script>
 </head>
 <body>
     <div id="central">
@@ -70,18 +41,5 @@
             </div>
         </div>
     </div>
-    
 </body>
-<script>
-    function calcula(tecla){
-		if(tecla == ""){
-            document.getElementById("expressao").value = "";
-        }else if(tecla == "="){
-            var calculo =  document.getElementById("expressao").value;
-            document.getElementById("expressao").value = eval(calculo);
-        }else{
-            document.getElementById("expressao").value += tecla;
-        }
-    }
-</script>
 </html>
