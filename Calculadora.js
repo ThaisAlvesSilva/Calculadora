@@ -1,6 +1,6 @@
 
 function calcula(tecla){
-    if(tecla == ""){
+    if(tecla == "limpar"){
         document.getElementById("expressao").value = "";
     }else if(tecla == "="){
         var calculo =  document.getElementById("expressao").value;
